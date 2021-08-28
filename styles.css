@@ -1,0 +1,120 @@
+html,body{
+   margin: 0;
+}
+
+body{
+   background-image: url(BG.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 40%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.add-Here{
+   text-align: center;
+   margin-top: 2em;
+   padding: 1em;
+}
+
+#add-New, #submit{
+   background-color: darkcyan;
+   border: 0;
+   color:#fff;
+   padding: 0.5em;
+   font-size: 1rem;
+   border-radius: 10px;
+}
+
+#add-New:hover, #submit:hover{
+   cursor: pointer;
+}
+
+.text-box{
+   text-align: center;
+   z-index: 1;
+   display: none;
+}
+
+input, #submit{
+   margin: 1em 0;
+}
+
+input{
+   width: 20%;
+   padding: 0.5em;
+   border: 0;
+   background-color: #D3CCE8;
+   color: #000;
+}
+
+#submit{
+   background-color: #454170;
+   border-radius: 0;
+}
+
+.pin{
+   display: flex;
+   background-color: wheat;
+   width: 55%;
+   justify-content: center;
+   padding: 0.3em 0;
+   margin: 1em auto;
+}
+
+#close:hover{
+   cursor: pointer;
+}
+
+@media (max-width:1151px){
+   .pin{
+      width: 60%;
+   }
+}
+
+@media (max-width:1086px){
+   .pin{
+      width: 65%;
+   }
+}
+
+@media (max-width:1015px){
+   .pin{
+      width: 75%;
+   }
+}
+
+@media (max-width:886px){
+   .pin{
+      width: 85%;
+   }
+}
+
+@media (max-width:800px){
+   .pin{
+      width: 95%;
+   }
+}
+
+.pin-board{
+   padding: 0 3em;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 1em;
+}
+
+@media (max-width:768px){
+   .pin-board{
+      grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media (max-width:460px){
+   .pin-board{
+      grid-template-columns: repeat(1,1fr);
+   }
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}
